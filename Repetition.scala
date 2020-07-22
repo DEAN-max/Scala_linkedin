@@ -70,4 +70,4 @@ do{
 println(result)
 }while(choice != 1 && choice != 2 && choice != 3 && choice != 4 )
 
-
+/*A do while loop is used as the user should be shown the menu atleast once irrespective of the choice that he/she chooses to make.*/
