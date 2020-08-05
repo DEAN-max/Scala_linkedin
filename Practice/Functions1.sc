@@ -5,6 +5,7 @@ object Functions {
   printHello("Dean")                              //> res0: String = HelloDean
   def Hello() = {"Hello World"}                   //> Hello: ()String
   Hello                                           //> res1: String = Hello World
+  // Function with 2 arguments.
   def add(x: Int, y: Int): Int = x + y            //> add: (x: Int, y: Int)Int
   add(4, 88)                                      //> res2: Int = 92
 }
