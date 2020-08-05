@@ -7,4 +7,6 @@ object Special_Functions2 {
   val f = (x: Int) => x + 1                       //> f  : Int => Int = Special_Functions2$$$Lambda$12/0x0000000800c20040@3224f60b
                                                   //| 
   f(5)                                            //> res1: Int = 6
+  // When we follow this approach it internally invokes apply()
+  f.apply(3)
 }
