@@ -36,8 +36,8 @@ object Special_Functions2 {
   g("Peggy")                                    //> res4: String = Hello Peggy
   
  // Finally we will look into closure function. Parameters could be used inside closure function which are not passed into that function.
-  var y = 5                                   
-  val multiplier = (x: Int) => x * y          
-  multiplier(4)                               
+  var y = 5                                       //> y  : Int = 5
+  val multiplier = (x: Int) => x * y              //> multiplier  : Int => Int = spfunc$$$Lambda$11/0x0000000800b94040@6737fd8f
+  multiplier(4)                                   //> res0: Int = 20                              
   
 }
