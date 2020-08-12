@@ -62,6 +62,7 @@ object challenge {
   for(g <- grades) count=count+1
 // foldLeft helps to add next values to the first item.
   val sum = grades.foldLeft(0.0)(_+_)             //> sum  : Double = 857.0
+// Also underscore represents or denotes each values in a list.
   def avg(c:Double):Double = { sum/c }            //> avg: (c: Double)Double
   println(avg(count))                             //> 85.7
   
