@@ -38,7 +38,7 @@ object Average {
                                                   //> Average value is: 85
 }
 
-// Alternate solution.
+// ------------------------------------------------Alternate solution-------------------------------------------------------------------------------------------------
 
 object challenge {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
@@ -64,13 +64,5 @@ object challenge {
   val sum = grades.foldLeft(0.0)(_+_)             //> sum  : Double = 857.0
 // Also underscore represents or denotes each values in a list.
   def avg(c:Double):Double = { sum/c }            //> avg: (c: Double)Double
-  println(avg(count))                             //> 85.7
-  
-  
-                                                  
- 
- 		
- 	
- 
-  
+  println(avg(count))                             //> 85.7   
 }
