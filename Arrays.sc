@@ -39,6 +39,8 @@ object Arrays {
   // We can also use the update method to update array values.
   t.update(1, false)
 
-  t.foreach(println)  
+  t.foreach(println)                              //> true
+                                                  //| false
+                                                  //| 665  
 }
 
