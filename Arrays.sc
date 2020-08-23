@@ -9,5 +9,18 @@ object Arrays {
 // When printing the array values we are getting the reference values.  
   print(movies)                                   //> [Ljava.lang.String;@3712b94
   println(furniture)                              //> [Ljava.lang.String;@2833cc44
+  // Printing out array value of a specific position.
+  println(movies(0))                              //> Sonic and the Hedgehog
+  println(furniture(3))                           //> Rocker
+  
+  // Defining the print function to loop through the array elements and print out the element values. Return type is mentioned as Unit as there are no return type of this function.
+  def print(strArray: Array[String]): Unit = (strArray.foreach(println))
+                                                  //> print: (strArray: Array[String])Unit
+  
+  print(movies)                                   //> Sonic and the Hedgehog
+                                                  //| null
+                                                  //| null
+                                                  //| null
+                                                  //| null
 }
 
