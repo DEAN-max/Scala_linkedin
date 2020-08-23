@@ -22,5 +22,23 @@ object Arrays {
                                                   //| null
                                                   //| null
                                                   //| null
+  print(furniture)                                //> TV
+                                                  //| Bed
+                                                  //| Sofa
+                                                  //| Rocker
+  
+  var t = new Array[AnyVal](3)                    //> t  : Array[AnyVal] = Array(null, null, null)
+  t(0) = true
+  t(1) = 1.44423232
+  t(2) = 665
+  t.foreach(println)                              //> true
+                                                  //| 1.44423232
+                                                  //| 665
+  // Updating an array value internally calls update method.
+  t(1) = false
+  // We can also use the update method to update array values.
+  t.update(1, false)
+
+  t.foreach(println)  
 }
 
