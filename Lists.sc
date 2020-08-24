@@ -29,5 +29,16 @@ object Lists {
   	x1.foreach(sum += _)
   
   	println(sum)                              //> 21
-	
+	// Next will print a List containing only string values.
+	var language = List("C", "C++", "Java", "Scala", "Python")
+                                                  //> language  : List[String] = List(C, C++, Java, Scala, Python)
+  
+  	for(lan <- language) println(lan)         //> C
+                                                  //| C++
+                                                  //| Java
+                                                  //| Scala
+                                                  //| Python
+	// Using map function to modify values in a list. This is really a very handy function.
+	// The below map function modifies the list elements by multipling by 2.
+	var z = x3.map(_ * 2)                     //> z  : List[Int] = List(20, 22, 24, 26, 28, 30, 32, 34, 36, 38)
 }
