@@ -3,7 +3,7 @@ object computer {
 
 //lists can be made up of objects
 class Computer(val make:String, val model:String, val ram:String){
-	override def toString:String = ("["+make + ", "+model + ", "+ ram+"]\n")
+	override def toString:String = ("["+make + ", "+model + ", "+ ram+"]\n") // We are overriding the toString() method
 
 }
 val computers = List(new Computer("Dell", "Laptop", "16GB"),
