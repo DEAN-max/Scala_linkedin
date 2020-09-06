@@ -39,6 +39,17 @@ println
 for ( n <- 1 to 10 ; e = n % 2; if e==0 ) yield n * n
 
 // val res6: IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
+// Note that the above yeild statement is rewritten as below without using the assignment operator, then it gets a syntax error.
+/*
+for ( n <- 1 to 10 ; n % 2 == 0 ) yield n * n
+HelloWorld.scala:4: error: '<-' expected but ')' found.
+      for ( n <- 1 to 10 ; n % 2 == 0 ) yield n * n
+                                      ^
+HelloWorld.scala:6: error: illegal start of simple expression
+   }
+   ^
+two errors found
+*/
 
 //sum each pair of numbers, expected result: 3,7,11
 val list = List((1,2),(3,4),(5,6))
