@@ -54,14 +54,15 @@ HelloWorld.scala:6: error: illegal start of simple expression
 two errors found
 */
 // Using until. Loop ends one minus the upper limit while in 'to' the loop continues till the upper limit.
-scala> for(x <- 0 until word.length){ println(word(x))}
+for(x <- 0 until word.length){ println(word(x))}
+/*
 I
 n
 d
 i
 a
 n
-
+*/
 //sum each pair of numbers, expected result: 3,7,11
 val list = List((1,2),(3,4),(5,6))
 
