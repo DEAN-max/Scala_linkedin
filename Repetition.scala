@@ -36,7 +36,10 @@ println
 /*Output - 1,2,3,4,5,2,4,6,8,10,3,6,9,12,15,4,8,12,16,20,5,10,15,20,25,*/
 
 //for each even number between 1 and 10, square it, expected result: 4,16,36,64,100
-for ( n <- 1 to 10 ; e = n % 2; if e==0 ) yield n * n
+for ( n <- 1 to 10 ; e = n % 2; if e==0 ) yield n * n // The variables used in the for loop need not be initialized before the loop starts.
+// The above generated vector could also be assigned to another variable.
+var kl = for ( n <- 1 to 10 ; e = n % 2; if e==0 ) yield n * n
+//var kl: IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
 
 // val res6: IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
 // Note that the above yeild statement is rewritten as below without using the assignment operator, then it gets a syntax error.
