@@ -17,4 +17,10 @@ object Functions {
     // Hence the computation inside the for loop has been broken down into 2 statements instead of one.
     }                               
   print(fact(5))
+  
+  // Factorial using recursion.
+  def facto(n: Int): Int = if(n == 0) 1 else n * facto(n - 1)
+// facto: (n: Int)Int
+  facto(6)
+// res1: Int = 720
 }
