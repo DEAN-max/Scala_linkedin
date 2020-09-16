@@ -9,7 +9,7 @@ object Functions {
   print(abs(-21))
   
   // Factorial calculation using function.
-  def fact(n:Int) = {
+  def fact(n:Int) = {  // Note that the return type has not been explicitly mentioned in this case the compiler automatically adds the return type. Otherwise we may choose to mention the return type which will also yeild the sane result.
   	var r = 1
   	for(i <- 1 to n)
   		r = r * i       // This statement could also be rewritten in short hand form like r *= i
