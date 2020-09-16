@@ -27,4 +27,15 @@ object Functions {
   // We can also initialize values at the time of function calling.
   def name(fname: String, lname: String) = print(fname + " " + lname)
   name(fname = "Carol", lname = "Denver")
+  // Interestingly even if we happen to change the order at the time of function call, the final result remains to be the same.
+  //name(lname = "Denver", fname = "Carol") --> This will also yeild the same result.
+  
+  // We can even use default values in our function.
+  def name(right: String = "[ ", fname: String, lname: String, left: String = " ]") = print(right + fname + " " + lname + left)
+//name: (right: String, fname: String, lname: String, left: String)Unit
+
+name(lname = "Denver", fname = "Carol")
+  //[ Carol Denver ]
+  // Note that the values inside the variables are required to be initialized either at the time of function call or inside the function parameters.
+  
 }
