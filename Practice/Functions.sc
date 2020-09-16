@@ -38,4 +38,14 @@ name(lname = "Denver", fname = "Carol")
   //[ Carol Denver ]
   // Note that the values inside the variables are required to be initialized either at the time of function call or inside the function parameters.
   
+  // Function pointers.
+  
+  def add(args: Int*) = {
+        var sum: Int = 0
+        for(arg <- args)  sum += arg
+
+        sum
+  }
+  add(1,2,3,4,5)
+//res2: Int = 15
 }
