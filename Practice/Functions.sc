@@ -23,4 +23,8 @@ object Functions {
 // facto: (n: Int)Int
   facto(6)
 // res1: Int = 720
+  
+  // We can also initialize values at the time of function calling.
+  def name(fname: String, lname: String) = print(fname + " " + lname)
+  name(fname = "Carol", lname = "Denver")
 }
