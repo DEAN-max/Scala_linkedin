@@ -39,4 +39,9 @@ object Decision_Statement {
   	case _ => "INVALID"
   	}                                         //> result  : String = weekday
   println(result)                                 //> weekday
+  // We can use a variable to store a conditional statement.
+  val b = -443
+  var a = if (b < 0) -1 else 1
+  println(a)                              // The same print syntax could be rewritten directly without using an intermediate variable to store value.
+                                          // println(if (b < 0) -1 else 1)
 }
