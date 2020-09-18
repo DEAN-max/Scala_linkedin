@@ -9,4 +9,13 @@ object pattern_matching extends App{
     }
   }
   println("The greek letter for B is: " + greekLetter('b'))
+
+  // Another example.
+  def max(a: Int, b: Int): Int = {
+    a > b match {
+      case true => a
+      case false => b
+    }
+  }
+  println("Max of 2 numbers is: " + max(400, 500))
 }
