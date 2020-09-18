@@ -17,6 +17,10 @@ object Sets_and_Map {
   num += 6                                        
   print(num)                                      //> Set(5, 1, 6, 2, 3)
   
+  num.contains(5)				  // Check whether s1 set has the element 5
+// val res2: Boolean = false
+  num(5)						  // Similar check so 'contains' method is not mandatory.
+// val res3: Boolean = false
   if(num.isEmpty) println("Set is empty")
   
   else println("Value of the first set element is " + num.head)
@@ -33,6 +37,7 @@ object Sets_and_Map {
                                                   //| 34, 12, 43, Twenty three, ....., 23)
   // This will also get rid of the duplicate elements. It could also be observed that the data type has changed to Any type.
   // Last command we will try out is to check whether there are any overlappings present or not between 2 sets.
+  // This is called intersection
   
   val x1 = Set(1, 2, 3)                     //> x1  : scala.collection.immutable.Set[Int] = Set(1, 2, 3)
 	var x2 = Set(1, 2, 3)                     //> x2  : scala.collection.immutable.Set[Int] = Set(1, 2, 3)
@@ -52,7 +57,15 @@ object Sets_and_Map {
 	x1.&(x2)                                  //> res3: scala.collection.immutable.Set[Int] = Set(1, 2, 3)
   
   // No matter what is the order of x1.&(x2) is, it will always filter out the common elements. The is not only applicable for numberic datasets but also datasets having combination of different datatypes.
-  
+  // Removing element from a set.
+var nums = Set(3, 2, 2, 8)
+// var nums: scala.collection.immutable.Set[Int] = Set(3, 2, 8)
+
+nums -= 8
+
+scala> nums
+// val res5: scala.collection.immutable.Set[Int] = Set(3, 2)
+	
   // Let's talk about maps now. Below statement declares a map.
   var g = Map(1 -> "Novice", 2 -> "Amature", 3 -> "Intermediate", 4 -> "Pro")
                                                   //> g  : scala.collection.immutable.Map[Int,String] = Map(1 -> Novice, 2 -> Amatu
