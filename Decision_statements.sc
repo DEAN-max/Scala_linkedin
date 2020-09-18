@@ -44,4 +44,6 @@ object Decision_Statement {
   var a = if (b < 0) -1 else 1
   println(a)                              // The same print syntax could be rewritten directly without using an intermediate variable to store value.
                                           // println(if (b < 0) -1 else 1)
+  // We can also put in nested if else statement.
+  println(if(b < 0) -1 else if(b == 0) 0 else 1)
 }
