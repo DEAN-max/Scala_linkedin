@@ -96,4 +96,26 @@ scala> nums
   g.get(6)                                        //> res1: Option[String] = None	
   // In scala we can also print out a message when the map element we are trying to access does not exist.
   g.getOrElse(6, "Element does not exist")        //> res2: String = Element does not exist
-}
+	
+  var groceries = Map(1 -> "Milk", 2 -> "Sugar", 3 -> "Grains", 4 -> "Hazel nut")
+// var groceries: scala.collection.immutable.Map[Int,String] = Map(1 -> Milk, 2 -> Sugar, 3 -> Grains, 4 -> Hazel nut)
+
+  for(v <- groceries.values) println(v)
+// Remember that values are added using a hash table hence their order might be different when printed.
+/*
+Milk
+Sugar
+Grains
+Hazel nut
+*/
+// We can also print the values in the reverse order values followed by keys.
+
+var z = for((k, v) <- groceries) yeild(v, k)
+// var z: scala.collection.immutable.Map[String,Int] = Map(Milk -> 1, Sugar -> 2, Grains -> 3, Hazel nut -> 4)
+z.foreach(println)
+/*
+(Milk,1)
+(Sugar,2)
+(Grains,3)
+(Hazel nut,4)
+*/
