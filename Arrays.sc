@@ -50,5 +50,12 @@ object Arrays {
   t.foreach(println)                              //> true
                                                   //| false
                                                   //| 665  
+  // Creating an array variable from another array elements.
+  var a = Array(1, 2, 3, 4, 5)
+  var b = for(num <- a) yield 2 * num
+//var b: Array[Int] = Array(2, 4, 6, 8, 10)
+  // Another such example.
+  var odd = for (num <- a if num %2 != 0) yield num
+//var odd: Array[Int] = Array(1, 3, 5)
 }
 
