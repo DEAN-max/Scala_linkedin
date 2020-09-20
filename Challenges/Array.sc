@@ -59,4 +59,9 @@ object arraychallenge extends App {
   println("Min value is: "+min(numArray))
   println("Max value is: "+max(numArray))
   
+/*
+Average is: 35.0
+Min value is: 4
+Max value is: 100
+*/
 }
