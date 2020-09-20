@@ -13,6 +13,14 @@ object Arrays {
   println(movies(0))                              //> Sonic and the Hedgehog
   println(furniture(3))                           //> Rocker
   
+  // Printing elements using a for loop.
+  for(fur <- furniture) println(fur)
+  /*
+  TV
+  Bed
+  Sofa
+  Rocker
+  */
   // Defining the print function to loop through the array elements and print out the element values. Return type is mentioned as Unit as there are no return type of this function.
   def print(strArray: Array[String]): Unit = (strArray.foreach(println))
                                                   //> print: (strArray: Array[String])Unit
