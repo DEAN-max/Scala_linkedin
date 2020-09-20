@@ -41,4 +41,11 @@ object Lists {
 	// Using map function to modify values in a list. This is really a very handy function.
 	// The below map function modifies the list elements by multipling by 2.
 	var z = x3.map(_ * 2)                     //> z  : List[Int] = List(20, 22, 24, 26, 28, 30, 32, 34, 36, 38)
+	// Creating list of lists.
+	
+	val list = List((1, 2), (2, 3), (4, 5))
+// val list: List[(Int, Int)] = List((1,2), (2,3), (4,5))
+	
+	for((a, b) <- list) yield a + b          // Adding values of each sub list elements and forming a new list.
+// val res11: List[Int] = List(3, 5, 9)
 }
