@@ -57,5 +57,18 @@ object Arrays {
   // Another such example.
   var odd = for (num <- a if num %2 != 0) yield num
 //var odd: Array[Int] = Array(1, 3, 5)
+  
+  // Note that array elements could also be changed when the type of variable is a 'val' type.
+  // When we speak about immutability, it comes down to what type of data structure we are working with.
+  // In case of a val type array the elements could not be added or removed however the existing values could be updated.
+  // val type arrays have their length fixed.
+  
+  val arr = Array("hello", "Tom", "Bye")
+// val arr: Array[String] = Array(hello, Tom, Bye)
+  
+  arr(2) = "Go"
+  
+  arr
+// val res1: Array[String] = Array(hello, Tom, Go)
 }
 
