@@ -70,5 +70,29 @@ object Arrays {
   
   arr
 // val res1: Array[String] = Array(hello, Tom, Go)
+  
+  // Distinct method on arrays.
+  val nums = Array(22, 1, 2, 5, 22, 11, 5, 0, -32)
+// val nums: Array[Int] = Array(22, 1, 2, 5, 22, 11, 5, 0, -32)
+
+  nums.distinct
+// val res2: Array[Int] = Array(22, 1, 2, 5, 11, 0, -32)
+  
+  // Finding the sum of all the elements of an array.
+  nums.sum
+// val res3: Int = 36
+
+  // Finding min and max.
+  nums.min                                  //> res0: Int = -32
+	nums.max                                  //> res1: Int = 22
+  
+// Finding the first element of an array.
+  nums.head                                 //> res0: Int = 22
+// Finding all the elements except for the first element.
+  nums.tail                                 //> res0: Array[Int] = Array(1, 2, 5, 22, 11, 5, 0, -32)
+// Finding the last element of an array.
+  nums.last                                 //> res0: Int = -32
+  
+  
 }
 
